@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: auto;
+}
+
+h1,
+h2 {
+    font-family: 'Alan Sans', sans-serif;
+}
+
+body {
+    font-family: "Zalando Sans", sans-serif;
+}
+
+header {
+    background-color: #32314e;
+    text-align: center;
+    color: #ffffff;
+    /*border-bottom: solid 5px #000000; /*Borde del header*/
+    padding: 30px 0;
+    /*TO RIGHT BOTTOM LEFT*/
+
+}
+
+nav{
+    background-color: #ffffff;
+    padding: 30px 20px;    
+    border-bottom: 5px solid #32314e;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+nav a:hover{
+    background-color: #8985a8;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#bienvenida{
+    padding: 30px;
+    text-align: center;
+}
+
+#proyectos {
+    background-color: #8985a8;
+    padding: 30px 20px;
+    /*30 = Valor Vertical 20 = Valor Horizontal*/
+    margin: 20px 0;
+    text-align: center;
+}
+
+.lista-proyectos{
+    display: flex;
+    padding-top: 20px;
+}
+
+.proyecto{
+    width: 30%;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.proyecto h3{
+    color: #ffffff;
+}
+
+#competencias{
+    padding: 30px 20px;
+}
+
+#competencias h2{
+    padding: 20px;
+    text-align: center;
+}
+
+#competencias ul{
+    list-style-type: none;
+    display: flex;
+    clear: both;
+}
+
+#competencias ul li{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#contacto{
+    padding: 30px 20px;
+    border-top: 2px dashed #32314e;
+}
+
+.campos{
+    padding: 10px;
+    clear: both;
+font-size: 16px;
+}
+
+.campos label{
+    font-size: 20px;
+}
+
+.campos input{
+    width: 30%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: solid 2px #32314e;
+}
+
+.campos button{
+    background-color: #32314e;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    padding: 30px 30px;
+    background-color: #32314e;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    border-top: solid 5px #32314e;
+}
