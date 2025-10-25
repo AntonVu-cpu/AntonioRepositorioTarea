@@ -4,45 +4,50 @@
     margin: auto;
 }
 
-h1,
 h2 {
     font-family: 'Alan Sans', sans-serif;
 }
 
 body {
     font-family: "Zalando Sans", sans-serif;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #32314e;
+    background-color: #1d1d1d;
     text-align: center;
     color: #ffffff;
-    /*border-bottom: solid 5px #000000; /*Borde del header*/
     padding: 30px 0;
     /*TO RIGHT BOTTOM LEFT*/
-
 }
 
-nav{
-    background-color: #ffffff;
-    padding: 30px 20px;    
-    border-bottom: 5px solid #32314e;
-    font-size: 15px;
-    text-align: center;
+header h1{
+    font-size: 40px
+}
 
+header h4{
+    font-size: 25px
+}
+
+
+nav{
+    background-color: #BCD8EC;
+    padding: 20px 30px;    
+    font-size: 40px;
+    text-align: center;
 }
 
 nav a{
     text-decoration: none;
     color: #000000;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
     padding: 10px;
     text-transform: capitalize;
 }
 
 nav a:hover{
-    background-color: #8985a8;
-    color: #ffffff;
+    color: #4682b4;
     border-radius: 10px;
 }
 
@@ -51,12 +56,53 @@ nav a:hover{
     text-align: center;
 }
 
+#bienvenida h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+#bienvenida p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+#bienvenida mark{
+    background-color: #BCD8EC;
+    color: #000000;
+}
+
+.frase-favorita{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.frase-favorita strong{
+    color: #4682b4;
+    font-style: italic;
+}
+
+#bienvenida img{
+    width: 300px;
+    border-radius: 20%;
+    border: solid 3px #000000;
+    margin-bottom: 10px;
+}
+
 #proyectos {
-    background-color: #8985a8;
-    padding: 30px 20px;
+    background-color: #BCD8EC;
+    padding: 50px 20px;
     /*30 = Valor Vertical 20 = Valor Horizontal*/
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
+}
+
+#proyectos h2{
+    color: #000000;
+    font-size: 40px;
 }
 
 .lista-proyectos{
@@ -65,79 +111,164 @@ nav a:hover{
 }
 
 .proyecto{
-    width: 30%;
-    border: solid 2px #ffffff;
+    height: 100px;
+    width: 40%;
     color: #ffffff;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 30px 10px 80px 10px;    
+    border-radius: 30px;
+    background-color: #1d1d1d;
 }
 
 .proyecto h3{
-    color: #ffffff;
+    color: #BCD8EC;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.proyecto a{
+    font-size: 20px;
 }
 
 #competencias{
     padding: 30px 20px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+#competencias h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #competencias h2{
+    font-size: 30px;
     padding: 20px;
     text-align: center;
 }
 
 #competencias ul{
-    list-style-type: none;
     display: flex;
     clear: both;
+    list-style: none;
+    margin-bottom: 10px;
 }
 
 #competencias ul li{
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+#competencias h3{
+    font-size: 30px;
+    color: #000000;
     text-align: center;
-    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.progreso {
+    display: flex;
+    font-size:25px;
+    font-weight: bold;
+}
+
+#competencias progress {
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+#competencias progress::-webkit-progress-bar {
+    background: #1d1d1d;
+    border-radius: 15px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#competencias progress::-webkit-progress-value {
+    background: linear-gradient(45deg, #4682b4, #4682b4);
+    border-radius: 15px;
 }
 
 #contacto{
-    padding: 30px 20px;
-    border-top: 2px dashed #32314e;
+    padding: 20px 20px;
+    border-top: 2px  #BCD8EC;
+    color: #000000;
+    margin-bottom: 30px;
 }
+
+#contacto h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#contacto p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+} 
 
 .campos{
     padding: 10px;
     clear: both;
-font-size: 16px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 .campos label{
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .campos input{
     width: 30%;
     padding: 15px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: solid 2px #32314e;
-}
-
-.campos button{
-    background-color: #32314e;
-    color: #ffffff;
     font-size: 20px;
-    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: solid 2px #4682b4;
+    color: #000000;
+}
+.campos button{
+    background-color: #BCD8EC;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 40px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.redes{
+    margin-left: 20px;
+    line-height: 2 ;
+}
+
+.redes a{
+    font-size: 25px;
+    margin-top: 20px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;	
+}
+
+.redes a:hover {
+    color: #4682b4;
 }
 
 footer {
     padding: 30px 30px;
-    background-color: #32314e;
+    background-color: #BCD8EC;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 20px;
-    border-top: solid 5px #32314e;
+    font-weight: bold;
+    border-top: solid 5px #BCD8EC;
 }
